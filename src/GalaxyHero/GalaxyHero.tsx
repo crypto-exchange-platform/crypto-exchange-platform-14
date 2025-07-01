@@ -77,7 +77,7 @@ export default function GalaxyHero() {
     <div style={styles.wrapper}>
       <div ref={containerRef} style={styles.canvas} />
       <div style={styles.textBox}>
-        <h1 style={styles.title}>Trade Crypto Instantly with Blockverse</h1>
+        <h1 style={styles.title}>Trade Crypto Instantly with CryptVerse</h1>
         <p>Secure. Scalable. Borderless. Your gateway to digital assets.</p>
         <div style={styles.buttonWrapper}>
           <button style={styles.button}>Launch App</button>
