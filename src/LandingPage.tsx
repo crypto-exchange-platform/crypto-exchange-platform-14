@@ -1,8 +1,9 @@
-import  { FC, useState } from "react";
+import { FC, useState } from "react";
 import { SignupModal } from "./SignUpModal";
 import { LoginModal } from "./LoginModal";
 import Header from "./Header";
 import ThreeHero from "./GalaxyHero/GalaxyHero";
+import MarketSection from "./MarketSection";
 
 const LandingPage: FC = () => {
   const [modal, setModal] = useState<"login" | "signup" | null>(null);
@@ -24,12 +25,11 @@ const LandingPage: FC = () => {
           onLogin={() => setModal("login")}
           onSignup={() => setModal("signup")}
         />
-      <ThreeHero/>
-
+        <ThreeHero />
+        <MarketSection />
       </div>
     </>
   );
 };
 
 export default LandingPage;
-  
