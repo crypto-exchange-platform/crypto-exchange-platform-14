@@ -7,6 +7,7 @@ import MarketSection from "./MarketSection";
 import TradeSection from "./TradeSection";
 import PortfolioSection from "./PortfolioSection";
 import ForexNewsSection from "./ForexNewsSection";
+import Footer from "./Footer";
 
 const LandingPage: FC = () => {
   const [modal, setModal] = useState<"login" | "signup" | null>(null);
@@ -28,11 +29,28 @@ const LandingPage: FC = () => {
           onLogin={() => setModal("login")}
           onSignup={() => setModal("signup")}
         />
-        <ThreeHero />
-        <MarketSection />
-        <TradeSection/>
-        <PortfolioSection/>
-        <ForexNewsSection/>
+
+        <div id="home">
+          <ThreeHero />
+        </div>
+
+        <div id="markets">
+          <MarketSection />
+        </div>
+
+        <div id="trade">
+          <TradeSection />
+        </div>
+
+        <div id="portfolio">
+          <PortfolioSection />
+        </div>
+
+        <div id="news">
+          <ForexNewsSection />
+        </div>
+
+        <Footer />
       </div>
     </>
   );
